@@ -66,15 +66,15 @@
         </div>
     </nav>
     <!-- home background -->
-    <div class="homeBg col-15">
+    <div class="homeBg">
         <div class="changeImgDiv">
             <div class="changeImg">
                 <div class="changeImgCard1"></div>
                 <div class="changeImgCard1 changeImgCard2"></div>
             </div>
             <div class="changeImgIcon">
-                <i class=" imgCardIcon fa-solid fa-arrow-left"></i>
-                <i class=" imgCardIcon fa-solid fa-arrow-right"></i>
+                <i id="imgCardIconLeft" class=" imgCardIcon fa-solid fa-arrow-left "></i>
+                <i id="imgCardIconRight" class=" imgCardIcon fa-solid fa-arrow-right"></i>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
     <!-- Scroll Section -->
 
     <div class="content">
-        <section class="col-6">
+        <section class="col-12 col-md-5">
             <div class="ps-5">
                 <p class="para1">Trusted by</p>
                 <p class="para1">100,000+ <span>Happy Clients</span></p>
@@ -112,31 +112,41 @@
                 </div>
             </div>
         </section>
-        <aside class="scrollContent col-6">
+        <aside class="scrollContent col-12 col-md-7">
             <div class="custom-scroll-bar">
                 <div class="aboutClipPath">
+                    <div><i class="fa-solid fa-building"></i></div>
                     <p class="ms-5 ps-5">Explore timeless design inspirations</p>
-                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark ideas
+                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark
+                        ideas
                         for your dream space.</p>
                 </div>
                 <div class="aboutClipPath">
+                    <div><i class="fa-solid fa-trophy"></i></div>
                     <p class="ms-5 ps-5 col-8">Work with top-rated designers</p>
-                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark ideas
+                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark
+                        ideas
                         for your dream space.</p>
                 </div>
                 <div class="aboutClipPath">
+                    <div><i class="fa-solid fa-building"></i></div>
                     <p class="ms-5 ps-5 col-10">Discover beautiful, functional spaces</p>
-                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark ideas
+                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark
+                        ideas
                         for your dream space.</p>
                 </div>
                 <div class="aboutClipPath">
+                    <div><i class="fa-solid fa-trophy"></i></div>
                     <p class="ms-5 ps-5 col-8">Work with top-rated designers</p>
-                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark ideas
+                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark
+                        ideas
                         for your dream space.</p>
                 </div>
                 <div class="aboutClipPath">
+                    <div><i class="fa-solid fa-building"></i></div>
                     <p class="ms-5 ps-5 col-8">Work with top-rated designers</p>
-                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark ideas
+                    <p class="ps-3 pt-3">Dive into curated interiors, styling guides, and aesthetic themes to spark
+                        ideas
                         for your dream space.</p>
                 </div>
             </div>
@@ -151,68 +161,63 @@
                 <p>Thoughtfully curated ideas to match the way you live, work, and relax.</p>
             </div>
             <div class="product-Hor-Scroll">
-                <i class="fa-solid fa-angle-left"></i>
-                <marquee direction="left" class="">
-                    <div>
-                        <div>Tv Units</div>
-                        <div>Puja Units</div>
-                        <div>Crockery Units</div>
-                        <div>Storage Units</div>
-                        <div>Study Table</div>
-                        <div>Modular Kitchen</div>
-                        <div>Flooring</div>
-                        <div>Wardrobe</div>
-                        <div>False Ceiling</div>
-                        <div>Tv Units</div>
-                        <div>Puja Units</div>
-                        <div>Crockery Units</div>
-                        <div>Storage Units</div>
-                        <div>Study Table</div>
-                        <div>Modular Kitchen</div>
-                        <div>Flooring</div>
-                        <div>Wardrobe</div>
-                        <div>False Ceiling</div>
+                <i class="prod-leftArrow fa-solid fa-angle-left"></i>
+                <div class="marqquee"><!--slider-->
+                    <div class="wrapper"><!--slider track-->
+                        <div class="item">Tv Units</div><!--slide-->
+                        <div class="item">Puja Units</div>
+                        <div class="item">Crockery Units</div>
+                        <div class="item">Storage Units</div>
+                        <div class="item">Study Table</div>
+                        <div class="item">Modular Kitchen</div>
+                        <div class="item">Flooring</div>
+                        <div class="item">Wardrobe</div>
+                        <div class="item">False Ceiling</div>
+                        <!-- repeat -->
+                        <div class="item">Tv Units</div>
+                        <div class="item">Puja Units</div>
+                        <div class="item">Crockery Units</div>
+                        <div class="item">Storage Units</div>
+                        <div class="item">Study Table</div>
+                        <div class="item">Modular Kitchen</div>
+                        <div class="item">Flooring</div>
+                        <div class="item">Wardrobe</div>
+                        <div class="item">False Ceiling</div>
                     </div>
-                </marquee>
-                <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <i class="prod-rightArrow fa-solid fa-angle-right"></i>
             </div>
         </div>
         <div class="productInfo">
             <div>
                 <p>Modern Wall-Mounted TV Unit With Ambient Backlighting</p>
-                <div class="productClip productInfoBg1">
-
-                </div>
+                <div class="productClip productInfoBg1"></div>
+                <i class="prod-info-icon fa-solid fa-arrow-right"></i>
             </div>
             <div>
                 <p>Modern Wall-Mounted TV Unit With Ambient Backlighting</p>
-                <div class="productClip productInfoBg2">
-
-                </div>
+                <div class="productClip productInfoBg2"></div>
+                <i class="prod-info-icon fa-solid fa-arrow-right"></i>
             </div>
             <div>
                 <p>Modern Wall-Mounted TV Unit With Ambient Backlighting</p>
-                <div class="productClip productInfoBg3">
-
-                </div>
+                <div class="productClip productInfoBg3"></div>
+                <i class="prod-info-icon fa-solid fa-arrow-right"></i>
             </div>
             <div>
                 <p>Modern Wall-Mounted TV Unit With Ambient Backlighting</p>
-                <div class="productClip productInfoBg4">
-
-                </div>
+                <div class="productClip productInfoBg4"></div>
+                <i class="prod-info-icon fa-solid fa-arrow-right"></i>
             </div>
             <div>
                 <p>Modern Wall-Mounted TV Unit With Ambient Backlighting</p>
-                <div class="productClip productInfoBg5">
-
-                </div>
+                <div class="productClip productInfoBg5"></div>
+                <i class="prod-info-icon fa-solid fa-arrow-right"></i>
             </div>
             <div>
                 <p>Modern Wall-Mounted TV Unit With Ambient Backlighting</p>
-                <div class="productClip productInfoBg6">
-
-                </div>
+                <div class="productClip productInfoBg6"></div>
+                <i class="prod-info-icon fa-solid fa-arrow-right"></i>
             </div>
         </div>
         <div class="col-12 text-center"><button class="prod-btn">Get a Free Consulatation</button></div>
@@ -222,23 +227,38 @@
     <div class="prod-360DegView">
         <p>Go Beyond the Blueprint</p>
         <p>Not just photos — explore our designs in immersive 360° views.</p>
-        <div class="row">
-            <div class="prodImg1 col-6">
-                <img src="./images/Kitchen.png" alt="" width="100%" height="100%">
+        <div>
+            <div class="prodImg1">
+                <div class="prodImgDiv">
+                    <img src="./images/kitchen.jpg" alt="" width="100%" height="100%">
+                </div>
+                <p>Kitchen</p>
             </div>
-            <div class="prodImg1 col-6">
-                <img src="./images/LivingRoom.png" alt="" width="100%" height="100%">
+            <div class="prodImg1">
+                <div class="prodImgDiv">
+                    <img src="./images/livingRoom.jpg" alt="" width="100%" height="100%">
+                </div>
+                <p>Living Room</p>
             </div>
         </div>
-        <div class="row">
-            <div class="prodImg2 col-4">
-                <img src="./images/DressingRoom.png" alt="" width="100%" height="100%">
+        <div>
+            <div class="prodImg2">
+                <div class="prodImgDiv">
+                    <img src="./images/dressingRoom copy.png" alt="" width="100%" height="100%">
+                </div>
+                <p>Dressing Room</p>
             </div>
-            <div class="prodImg2 col-4">
-                <img src="./images/BedRoom.png" alt="" width="100%" height="100%">
+            <div class="prodImg2">
+                <div class="prodImgDiv">
+                    <img src="./images/bedRoom.jpg" alt="" width="100%" height="100%">
+                </div>
+                <p>Bed Room</p>
             </div>
-            <div class="prodImg2 col-4">
-                <img src="./images/RestRoom.png" alt="" width="100%" height="100%">
+            <div class="prodImg2">
+                <div class="prodImgDiv">
+                    <img src="./images/restroom.jpg" alt="" width="100%" height="100%">
+                </div>
+                <p>Rest Room</p>
             </div>
         </div>
     </div>
@@ -273,48 +293,48 @@
     <!-- Services -->
     <div class="services">
         <div class="productsText">
-            <p>What we Do</p>
-            <p>The services we offer is specifically designed to meet your needs.</p>
+            <p class="text-center">What we Do</p>
+            <p class="text-center">The services we offer is specifically designed to <span style="display: block;">meet your needs.</span></p>
         </div>
-        <div class="service-content d-flex flex-column justify-content-center align-items-center">
-            <div class="row  d-flex justify-content-center align-items-center">
-                <div class="productsText col-6 ">
+        <div class="service-content">
+            <div class="row mb-5">
+                <div class=" productsText col-12 col-md-6 ">
                     <p class="service-para">Consult & Understand</p>
-                    <p>We start by listening—your needs, preferences, lifestyle, and budget shape the design direction.
+                    <p class="pe-3">We start by listening—your needs, preferences, lifestyle, and budget shape the design direction.
                     </p>
                 </div>
-                <div class="col-6 ">
-                    <p class="text-img text-img1">01</p>
+                <div class="col-12 col-md-6 ">
+                    <p class="text-img text-img1 d-flex justify-content-center">01</p>
                 </div>
             </div>
-            <div class="row  d-flex justify-content-center align-items-center">
-                <div class="col-6 ">
-                    <p class="text-img text-img2">02</p>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 ">
+                    <p class="text-img text-img2 ">02</p>
                 </div>
-                <div class="productsText col-6 ">
+                <div class="productsText col-12 col-md-6 ps-5 ">
                     <p class="service-para">Plan & Visualize</p>
-                    <p>The services we offer is specifically designed to meet your needs. The services we offer is
+                    <p class="pe-3">The services we offer is specifically designed to meet your needs. The services we offer is
                         specifically designed to meet your needs.</p>
                 </div>
 
             </div>
-            <div class="row  d-flex justify-content-center align-items-center">
-                <div class="productsText col-6 ">
+            <div class="row mb-5">
+                <div class="productsText col-12 col-md-6 ">
                     <p class="service-para">Design & Customize</p>
-                    <p>The services we offer is specifically designed to meet your needs. The services we offer is
+                    <p class="pe-3">The services we offer is specifically designed to meet your needs. The services we offer is
                         specifically designed to meet your needs.</p>
                 </div>
-                <div class="col-6 ">
-                    <p class="text-img text-img3">03</p>
+                <div class="col-12 col-md-6">
+                    <p class="text-img text-img3 d-flex justify-content-center">03</p>
                 </div>
             </div>
-            <div class="row  d-flex justify-content-center align-items-center">
-                <div class="col-6 ">
+            <div class="row mb-5">
+                <div class="col-12 col-md-6  ">
                     <p class="text-img text-img4">04</p>
                 </div>
-                <div class="productsText col-6 ">
+                <div class="productsText col-12 col-md-6 ps-5">
                     <p class="service-para">Execute & Deliver</p>
-                    <p>The services we offer is specifically designed to meet your needs. The services we offer is
+                    <p class="pe-3">The services we offer is specifically designed to meet your needs. The services we offer is
                         specifically designed to meet your needs.</p>
                 </div>
             </div>
@@ -323,6 +343,7 @@
 
     <!-- Featured Design -->
     <div class="featureDesign">
+        
         <div class="A gridArea"></div>
         <div class="B gridArea">
             <p>Sauna Design</p>
@@ -334,16 +355,16 @@
             <p>Location: <b>Pallikaranai</b></p>
             <p>Time of Completion: <b>30 Days</b></p>
         </div>
-        <div class="D gridArea">D</div>
-        <div class="E gridArea">E</div>
-        <div class="F gridArea">F</div>
-        <div class="G gridArea">G</div>
-        <div class="H gridArea">H</div>
-        <div class="I gridArea">I</div>
+        <div class="D gridArea"></div>
+        <div class="E gridArea"></div>
+        <div class="F gridArea"></div>
+        <div class="G gridArea"></div>
+        <div class="H gridArea"></div>
+        <div class="I gridArea"></div>
     </div>
 
     <!-- Apartment Design -->
-     <div class="featureDesign apartmentDesign">
+    <div class="featureDesign apartmentDesign">
         <div class="b1 gridArea">
             <p>Sauna Design</p>
             <p>Bringing warmth and sophistication together, this sauna interior was crafted to create a relaxing,
@@ -355,18 +376,18 @@
             <p>Time of Completion: <b>30 Days</b></p>
         </div>
         <div class="b3 gridArea">
-            
+
         </div>
-        <div class="b4 gridArea">D</div>
-        <div class="b5 gridArea">E</div>
-        <div class="b6 gridArea">F</div>
-        <div class="b7 gridArea">G</div>
-        <div class="b8 gridArea">H</div>
-        <div class="b9 gridArea">I</div>
+        <div class="b4 gridArea"></div>
+        <div class="b5 gridArea"></div>
+        <div class="b6 gridArea"></div>
+        <div class="b7 gridArea"></div>
+        <div class="b8 gridArea"></div>
+        <div class="b9 gridArea"></div>
     </div>
 
     <!-- sauna Design -->
-     <div class="featureDesign saunaDesign">
+    <div class="featureDesign saunaDesign">
         <div class="A gridArea"></div>
         <div class="B gridArea">
             <p>Sauna Design</p>
@@ -378,28 +399,28 @@
             <p>Location: <b>Pallikaranai</b></p>
             <p>Time of Completion: <b>30 Days</b></p>
         </div>
-        <div class="D gridArea">D</div>
-        <div class="E gridArea">E</div>
-        <div class="F gridArea">F</div>
-        <div class="G gridArea">G</div>
-        <div class="H gridArea">H</div>
-        <div class="I gridArea">I</div>
+        <div class="D gridArea"></div>
+        <div class="E gridArea"></div>
+        <div class="F gridArea"></div>
+        <div class="G gridArea"></div>
+        <div class="H gridArea"></div>
+        <div class="I gridArea"></div>
     </div>
 
     <!-- our Clients -->
-     <div class="clients">
+    <div class="clients">
         <h1 class="text-center">Our Clients</h1>
         <div>
-        <div class="track1"></div>
-        <div class="track1"></div>
-        <div class="track1"></div>
-        <div class="track1"></div>
-        <div class="track1"></div>
-        <div class="track1"></div>
-        <div class="track1"></div>
-        <div class="track1"></div>
-        <div class="track1"></div>
-        <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
+            <div class="track1"></div>
         </div>
         <div>
             <div class="track2"></div>
@@ -413,65 +434,68 @@
             <div class="track2"></div>
             <div class="track2"></div>
         </div>
-     </div>
+    </div>
 
 
     <!-- review -->
-     <div class="reviewDiv">
-     <div class="text-center">
+    <div class="reviewDiv">
+        <div class="text-center">
             <h1>Designs</h1>
             <h2>That Win Hearts</h2>
-     </div>
-     <div class="review">
-        <div>
-            <p><b>John Wick</b></p>
-            <p>Chennai</p>
         </div>
-        <div class="mainImg">
-             <img src="./images/pr-1.png" alt="" height="216" width="237">
-        </div>
-       <div class="subImg">
-            <!-- <img class="subImg1" src="./images/Rectangle 16.png" alt="" height="100" width="95"> -->
-            <!-- <img class="subImg2" src="./images/Rectangle 15.png" alt="" height="100" width="95">
+        <div class="review">
+            <div>
+                <p><b>John Wick</b></p>
+                <p>Chennai</p>
+            </div>
+            <div class="mainImg">
+                <img src="./images/pr-1.png" alt="" height="216" width="237">
+            </div>
+            <div class="subImg">
+                <!-- <img class="subImg1" src="./images/Rectangle 16.png" alt="" height="100" width="95"> -->
+                <!-- <img class="subImg2" src="./images/Rectangle 15.png" alt="" height="100" width="95">
             <img class="subImg3" src="./images/Rectangle 17.png" alt="" height="100" width="95">
             <img class="subImg4" src="./images/Rectangle 18.png" alt="" height="100" width="95">
             <img class="subImg5" src="./images/Rectangle 19.png" alt="" height="100" width="95">
             <img class="subImg6" src="./images/Rectangle 20.png" alt="" height="100" width="95">
             <img class="subImg7" src="./images/Rectangle 21.png" alt="" height="100" width="95">
             <img class="subImg8" src="./images/Rectangle 22.png" alt="" height="100" width="95"> -->
-       </div>
-        <div class="review-text">
-             <hr>
-            <p>“Absolutely transformed our home”</p>
-            <p>The team understood our vision and made it even better. Every room now feels like us. We get compliments from every guest</p>
-            <hr>
+            </div>
+            <div class="review-text">
+                <hr>
+                <p>“Absolutely transformed our home”</p>
+                <p>The team understood our vision and made it even better. Every room now feels like us. We get
+                    compliments from every guest</p>
+                <hr>
+            </div>
+            <img src="./images/br-1.png" alt="" height="216" width="237">
+            <div>
+                <p><b>Bed Room</b></p>
+                <p>Interior Design</p>
+            </div>
         </div>
-        <img src="./images/br-1.png" alt="" height="216" width="237">
-         <div>
-            <p><b>Bed Room</b></p>
-            <p>Interior Design</p>
-        </div>
-     </div>
-     </div>
+    </div>
 
     <!-- contact -->
-     <div class="contact">
+    <div class="contact">
         <img src="./images/contactImg.png" alt="" height="580" width="550">
         <div class="contactContent">
-             <p class="dot"><b>. . . .</b></p>
-             <p class="dot"><b>. . . .</b></p>
-            <p class="contactContent-p1">Interior  Design</p>
+            <p class="dot"><b>. . . .</b></p>
+            <p class="dot"><b>. . . .</b></p>
+            <p class="contactContent-p1">Interior Design</p>
             <p class="contactContent-p1">Specialist</p>
-            <p class="contactContent-p2">We design Your dream interior With passion  </p>
-            <p class="contactContent-p3">Discover a variety of storage and closet ideas, including layout and organization options Discover a variety of storage and closet ideas, including layout and organization options.</p>
+            <p class="contactContent-p2">We design Your dream interior With passion </p>
+            <p class="contactContent-p3">Discover a variety of storage and closet ideas, including layout and
+                organization options Discover a variety of storage and closet ideas, including layout and organization
+                options.</p>
             <button class="contactBtn">Now with free consulatation</button>
             <hr class="contact-hrline">
         </div>
-     </div>
+    </div>
 
     <!-- footer -->
     <footer>
-        
+
         <p>Interior Design</p>
         <div class="inpdiv">
             <input type="text" placeholder="Mobile Number">
@@ -488,7 +512,7 @@
                 <li>Blog</li>
                 <li>Contact Us</li>
             </ul>
-              <ul>
+            <ul>
                 <li class="listTitle">Services</li>
                 <li>Residential Interior Design</li>
                 <li>Commercial Interior Design</li>

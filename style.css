@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
 .homeBg {
     height: 115vh;
     width: 108vw;
-    background: linear-gradient(rgb(116, 116, 116, 0) 0%, rgb(60, 60, 60, 0) 60%, rgb(60, 60, 60, 0.7)), url(./images/bg-1.png);
+    background: linear-gradient(rgb(116, 116, 116, 0) 0%, rgb(60, 60, 60, 0) 60%, rgb(60, 60, 60, 0.4)), url(./images/bg-1.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -77,6 +77,40 @@ body::-webkit-scrollbar {
     align-items: center;
     flex-direction: column;
     padding-bottom: 50px;
+    /* animation: changeBg 10s infinite ease; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes changeBg {
+    0% {
+        background: linear-gradient(rgb(116, 116, 116, 0) 0%, rgb(60, 60, 60, 0) 60%, rgb(60, 60, 60, 0.7)), url(./images/bg-1.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    25% {
+        background: linear-gradient(rgb(116, 116, 116, 0) 0%, rgb(60, 60, 60, 0) 60%, rgb(60, 60, 60, 0.7)), url(./images/bg-1.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    50% {
+        background: linear-gradient(rgb(116, 116, 116, 0) 0%, rgb(60, 60, 60, 0) 60%, rgb(60, 60, 60, 0.7)), url(./images/bg-2.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    75% {
+        background: linear-gradient(rgb(116, 116, 116, 0) 0%, rgb(60, 60, 60, 0) 60%, rgb(60, 60, 60, 0.7)), url(./images/bg-3.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    100% {
+        background: linear-gradient(rgb(116, 116, 116, 0) 0%, rgb(60, 60, 60, 0) 60%, rgb(60, 60, 60, 0.7)), url(./images/bg-3.png);
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .homeBg>p {
@@ -105,14 +139,14 @@ body::-webkit-scrollbar {
 .changeImgCard1 {
     height: 320px;
     width: 210px;
-    background: url(./images/bg-3.png);
+    /* background: url(./images/bg-3.png); */
     background-size: cover;
     border-radius: 20px;
     border: 5px solid #F8E9DB;
 }
 
 .changeImgCard2 {
-    background: url(./images/bg-2.png);
+    /* background: url(./images/bg-2.png); */
     background-size: cover;
 }
 
@@ -136,7 +170,7 @@ body::-webkit-scrollbar {
 /* Scroll Section */
 
 .content {
-    height: 110vh;
+    height: 140vh;
     display: flex;
     color: #000000;
     margin-top: 50px;
@@ -149,6 +183,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 30px;
     /* border: 1px solid black; */
 }
 
@@ -236,11 +271,13 @@ body::-webkit-scrollbar {
 }
 
 .aboutClipPath {
+    position: relative;
     height: 200px;
     width: 526px;
     direction: ltr;
     margin: auto;
     margin-bottom: 20px;
+    margin-left: 90px;
     background-image: url(./images/Vector\ 1.png);
     background-size: cover;
     background-position: center;
@@ -305,29 +342,55 @@ body::-webkit-scrollbar {
 
 .product-Hor-Scroll>i {
     font-size: 25px;
+    padding-top: 10px;
 }
 
-marquee {
+.marqquee {
     height: 45px;
     width: 94vw;
     margin-top: 15px;
+    overflow: hidden;
     /* border: 1px solid black; */
 }
 
-marquee>div {
+.wrapper {
     display: flex;
+    width: calc(215px * 18);
+    animation: scroll 40s linear infinite;
     gap: 30px;
+    /* border: 1px solid black; */
 }
 
-marquee>div>div {
-    /* width: 134px; */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-215px * 9));
+    }
+
+}
+
+.wrapper:hover {
+    animation-play-state: paused;
+}
+
+.item {
+    width: -215px;
     /* height: 45px; */
     padding: 5px 15px;
     font-size: 25px;
     font-weight: 400;
     border-radius: 12px;
     background-color: #fff;
+    perspective: 100px;
+    /* border: 1px solid black; */
 }
+
+/* .item:hover {
+    transform: translateZ(20px);
+} */
 
 .productInfo {
     display: grid;
@@ -342,6 +405,7 @@ marquee>div>div {
 }
 
 .productInfo>div {
+    position: relative;
     width: 420px;
     padding: 20px;
     align-self: center;
@@ -360,6 +424,25 @@ marquee>div>div {
     font-size: 25px;
 }
 
+.prod-info-icon {
+    position: absolute;
+    right: 0px;
+    left: 81%;
+    top: 83%;
+    height: 55px;
+    width: 55px;
+    font-size: 20px;
+    padding-top: 18px;
+    border-radius: 50%;
+    transform: rotate(-38deg);
+    background-color: lightgray;
+}
+
+.productInfo>div:hover>.prod-info-icon {
+    transform: rotateX(-13deg);
+    background-color: sandybrown;
+}
+
 .productClip {
     width: 375px;
     height: 322px;
@@ -368,7 +451,7 @@ marquee>div>div {
     background-image: url("./images/b3.png");
     background-size: cover;
     background-position: center;
-    clip-path: path("M 10,20 A 10,10 0,0,1 20,10 L 365,10  A 10,10 0,0,1 375,20 L 375,260 L 300,322 L 20,322  A 10,10 0,0,1 10,311 L 10,20 Z");
+    clip-path: path("M 10,20 A 10,10 0,0,1 20,10 L 365,10  A 10,10 0,0,1 375,20 L 375,230 L 230,322 L 20,322  A 10,10 0,0,1 10,311 L 10,20 Z");
 }
 
 .productInfoBg2 {
@@ -425,17 +508,55 @@ marquee>div>div {
     margin-bottom: 50px !important;
 }
 
-.prod-360DegView>div {}
-
-.prodImg1>img {
-    width: 630px;
-    height: 414px;
-
+.prod-360DegView>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.prodImg2>img {
+.prodImg1 {
+    background-color: #fff;
+    width: 630px;
+    height: 414px;
+    margin-bottom: 20px;
+}
+
+.prodImg1>p,
+.prodImg2>p {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.prodImg1 .prodImgDiv {
+    width: 630px;
+    height: 325px;
+    overflow: hidden;
+}
+
+.prodImgDiv>img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    object-fit: cover;
+}
+
+.prodImg2 {
+    background-color: #fff;
     width: 413px;
     height: 414px;
+    margin-bottom: 10px;
+}
+
+.prodImg2 .prodImgDiv {
+    width: 413px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.prodImg1:hover img,
+.prodImg2:hover img {
+    transform: scale(1.2);
 }
 
 /* aboutUs */
@@ -514,42 +635,83 @@ marquee>div>div {
     /* margin-bottom: 0!important; */
 }
 
+.aboutClipPath>div>i {
+    color: #fff;
+    font-size: 35px;
+}
+
+.aboutClipPath>div {
+    position: absolute;
+    top: 13px;
+    padding-top: 15px;
+    text-align: center;
+    height: 67px;
+    width: 67px;
+    border-radius: 50%;
+    background-color: #053632;
+}
+
+.aboutClipPath>div:hover {
+    background-color: #FFFFFF;
+}
+
+.aboutClipPath>div>i:hover {
+    color: #053632;
+}
+
 /* Services */
+
 .services {
     width: 100vw;
-    text-align: center;
+    /* text-align: center; */
     color: #222222;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .services>div+div {
     /* border: 1px solid black; */
-    margin: auto;
 }
 
 .service-para {
     font-size: 45px !important;
     color: #000000;
+    /* text-align: left; */
+}
+.service-para+p{
+    /* text-align: left; */
 }
 
 .service-content>div {
     height: 319px;
     width: 1166px;
     padding: 20px;
+    display: flex;
+    /* gap: 10px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
 }
 
 .service-content {
-    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .service-content>div>div {
-    height: 224px;
-    width: 514px;
+    height: unset;
+    /* width: 514px; */
 }
 
 .text-img {
     font-weight: 700;
-    font-size: 200px;
+    font-size: 330px;
     background-image: url(./images/t-img1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -557,6 +719,11 @@ marquee>div>div {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0px !important;
+    margin-top: -120px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+   
 }
 
 .text-img2 {
@@ -956,4 +1123,27 @@ footer>p {
 .listTitle {
     font-weight: 600;
     font-size: 22px;
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .content {
+        height: unset;
+        flex-direction: column;
+    }
+
+    .service-content>div {
+        /* flex-direction: column; */
+    }
+
+    .aboutUs-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        height: unset;
+        flex-direction: column;
+    }
+    .prod-360DegView>div {
+        flex-direction: column;
+    }
 }
