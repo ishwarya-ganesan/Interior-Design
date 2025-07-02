@@ -29,7 +29,6 @@ body::-webkit-scrollbar {
 
 .navbar {
     height: 15vh;
-    /*106px*/
     background-color: #053632 !important;
 }
 
@@ -139,14 +138,14 @@ body::-webkit-scrollbar {
 .changeImgCard1 {
     height: 320px;
     width: 210px;
-    /* background: url(./images/bg-3.png); */
+    background: url(./images/bg-3.png);
     background-size: cover;
     border-radius: 20px;
     border: 5px solid #F8E9DB;
 }
 
 .changeImgCard2 {
-    /* background: url(./images/bg-2.png); */
+    background: url(./images/bg-2.png);
     background-size: cover;
 }
 
@@ -167,13 +166,35 @@ body::-webkit-scrollbar {
     margin-right: 30px;
 }
 
+.homeBg2 {
+    position: relative;
+    height: 115vh;
+}
+
+.container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+
 /* Scroll Section */
 
 .content {
-    height: 140vh;
+    height: 120vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000000;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 20px;
     /* border: 1px solid black; */
 }
@@ -183,23 +204,29 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     /* border: 1px solid black; */
 }
 
-.content section .para1 {
+.headline-text {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 50px;
+    color: black;
+    text-align: center;
 }
 
-.para1>span {
-    font-weight: 600;
-    font-size: 30px;
+.content .headline-text {
+    text-align: left;
 }
 
-.content section .para2 {
-    font-weight: 400;
+.content .headline-text>span {
+    font-weight: 600;
     font-size: 25px;
+}
+
+.sub-text {
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .iconDiv {
@@ -216,27 +243,27 @@ body::-webkit-scrollbar {
 }
 
 .iconCount>img {
-    height: 60px;
-    width: 65px;
+    height: 55px;
+    width: 60px;
 }
 
 .iconCount>p {
-    font-weight: 600;
-    font-size: 37px;
+    font-weight: 500;
+    font-size: 35px;
     margin-top: 20px !important;
     margin-bottom: 0px;
 }
 
 .iconCount>p+p {
-    font-weight: 300;
-    font-size: 15px;
+    font-weight: 200;
+    font-size: 12px;
     margin-top: 10px !important;
     margin-bottom: 0px;
 }
 
 .scrollContent {
     height: 80%;
-    width: 526px;
+    /* width: 526px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -246,16 +273,14 @@ body::-webkit-scrollbar {
 
 .scrollContent>.custom-scroll-bar {
     height: 100%;
-    width: 90%;
+    /* width: 90%; */
     padding: 10px;
     direction: rtl;
     overflow-y: scroll;
+    margin-left: -50px;
     /* border: 2px solid black; */
 }
 
-/* .custom-scroll-bar{
-    height: 100%;
-} */
 .custom-scroll-bar::-webkit-scrollbar {
     width: 10px;
 }
@@ -277,9 +302,10 @@ body::-webkit-scrollbar {
     direction: ltr;
     margin: auto;
     margin-bottom: 20px;
-    margin-left: 90px;
+    margin-left: 100px;
     background-image: url(./images/Vector\ 1.png);
     background-size: cover;
+    /* background-repeat: no-repeat; */
     background-position: center;
 
     /* background-color: aqua; */
@@ -298,7 +324,7 @@ body::-webkit-scrollbar {
 }
 
 .aboutClipPath:hover {
-    /* background-color: #3c5a58; */
+    background-color: #3c5a58;
 }
 
 /* products images */
@@ -338,11 +364,12 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 0 60px;
 }
 
 .product-Hor-Scroll>i {
     font-size: 25px;
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 .marqquee {
@@ -377,10 +404,10 @@ body::-webkit-scrollbar {
 }
 
 .item {
-    width: -215px;
+    /* width: 215px; */
     /* height: 45px; */
     padding: 5px 15px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 400;
     border-radius: 12px;
     background-color: #fff;
@@ -390,19 +417,19 @@ body::-webkit-scrollbar {
 
 .productInfo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
     border: 1px solid black;
     gap: 20px 20px;
     justify-content: center;
     place-items: center;
-    width: 97vw;
+    width: 90vw;
     margin: auto;
     border-style: none;
 }
 
 .productInfo>div {
     position: relative;
-    width: 420px;
+    width: 400px;
     padding: 20px;
     align-self: center;
     border-radius: 25px;
@@ -417,31 +444,31 @@ body::-webkit-scrollbar {
 
 .productInfo>div>p {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .prod-info-icon {
     position: absolute;
     right: 0px;
-    left: 81%;
-    top: 83%;
-    height: 55px;
-    width: 55px;
+    left: 82%;
+    top: 86%;
+    height: 50px;
+    width: 50px;
     font-size: 20px;
-    padding-top: 18px;
+    padding-top: 15px;
     border-radius: 50%;
     transform: rotate(-38deg);
     background-color: lightgray;
 }
 
 .productInfo>div:hover>.prod-info-icon {
-    transform: rotateX(-13deg);
+    transform: rotateX(0deg);
     background-color: sandybrown;
 }
 
 .productClip {
-    width: 375px;
-    height: 322px;
+    width: 350px;
+    height: 310px;
     border-radius: 15px;
     background-color: gray;
     background-image: url("./images/b3.png");
@@ -472,10 +499,10 @@ body::-webkit-scrollbar {
 
 .prod-btn {
     margin: 20px;
-    width: 374px;
-    height: 80px;
-    font-weight: 700;
-    font-size: 27px;
+    width: 350px;
+    height: 75px;
+    font-weight: 600;
+    font-size: 25px;
     color: #fff;
     border: none;
     border-radius: 17px;
@@ -493,14 +520,12 @@ body::-webkit-scrollbar {
 }
 
 .prod-360DegView>p {
-    font-weight: 700;
-    font-size: 60px;
     margin-bottom: 20px !important;
 }
 
 .prod-360DegView>p+p {
     font-weight: 400;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 50px !important;
 }
 
@@ -513,8 +538,8 @@ body::-webkit-scrollbar {
 
 .prodImg1 {
     background-color: #fff;
-    width: 630px;
-    height: 414px;
+    width: 44%;/*600px*/
+    height: 390px;
     margin-bottom: 20px;
 }
 
@@ -522,30 +547,28 @@ body::-webkit-scrollbar {
 .prodImg2>p {
     padding: 10px;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .prodImg1 .prodImgDiv {
-    width: 630px;
-    height: 325px;
+    width: 100%;
+    height: 84%;
     overflow: hidden;
 }
 
 .prodImgDiv>img {
-    /* max-width: 100%; */
-    /* height: auto; */
     object-fit: cover;
 }
 
 .prodImg2 {
     background-color: #fff;
-    width: 413px;
-    height: 414px;
+    width: 392px;
+    height: 405px;
     margin-bottom: 10px;
 }
 
 .prodImg2 .prodImgDiv {
-    width: 413px;
+    width: 392px;
     height: 340px;
     overflow: hidden;
 }
@@ -589,7 +612,7 @@ body::-webkit-scrollbar {
     padding: 5px;
     border-top-left-radius: 500px;
     border-top-right-radius: 500px;
-    border: 1px dotted black;
+    border: 1px dashed black;
 }
 
 .aboutUs-content1 {
@@ -749,12 +772,7 @@ body::-webkit-scrollbar {
 
 /* feature */
 
-.headline-text {
-    font-weight: 700;
-    font-size: 60px;
-    color: black;
-    text-align: center;
-}
+
 
 .rec {
     position: absolute;
@@ -783,7 +801,7 @@ body::-webkit-scrollbar {
 
 .featureDesign {
     position: relative;
-    width: 80vw;
+    width: 86vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1014,18 +1032,21 @@ body::-webkit-scrollbar {
 
 .track1,
 .track2 {
-    height: 105px;
+    height: 83px;
     width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid gray;
     border-radius: 11px;
     margin-bottom: 50px;
-    background-size: cover;
+    background-color: white;
 }
 
 .track1>img,
-.track2>img{
-    height: 103px;
-    width: 205px;
+.track2>img {
+    height: 60px;
+    width: 145px;
     border-radius: 11px;
 }
 
@@ -1046,7 +1067,7 @@ body::-webkit-scrollbar {
 }
 
 .clients .wrapper2 {
-      display: flex;
+    display: flex;
     width: calc(210px * 12);
     gap: 30px;
     animation: rightScroll 40s linear infinite;
@@ -1072,22 +1093,27 @@ body::-webkit-scrollbar {
     }
 }
 
-.client-img1{
+.client-img1 {
     background-image: url(./images/sbi.webp);
 }
-.client-img2{
+
+.client-img2 {
     background-image: url(./images/Ruby-Builders.webp);
 }
-.client-img3{
+
+.client-img3 {
     background-image: url(./images/Regus.webp);
 }
-.client-img4{
+
+.client-img4 {
     background-image: url(./images/KFC.webp);
 }
-.client-img5{
+
+.client-img5 {
     background-image: url(./images/Jos-Alukkas.webp);
 }
-.client-img6{
+
+.client-img6 {
     background-image: url(./images/Sathya.webp);
 }
 
@@ -1098,9 +1124,7 @@ body::-webkit-scrollbar {
     position: relative;
 }
 
-.sub-text {
-    font-size: 35px;
-    font-weight: 700;
+.reviewDiv .sub-text {
     margin-bottom: 100px !important;
 }
 
@@ -1162,66 +1186,80 @@ hr {
     right: 24%;
     top: 12%;
 }
+
 .subImg2 {
     right: 20%;
     top: 0%;
 }
+
 .subImg3 {
     right: 14%;
     top: -9%;
 }
+
 .subImg4 {
     right: 6%;
     top: -14%;
 }
+
 .subImg5 {
     right: 24%;
     bottom: 31%;
 }
+
 .subImg6 {
     right: 20%;
-      bottom: 18%;
+    bottom: 18%;
 }
+
 .subImg7 {
     right: 13%;
-    bottom:8%;
+    bottom: 8%;
 }
+
 .subImg8 {
     right: 5%;
-      bottom: 4%;
+    bottom: 4%;
 }
 
 .subImg9 {
     left: 24%;
     top: 12%;
 }
+
 .subImg10 {
     left: 20%;
     top: 0%;
 }
+
 .subImg11 {
     left: 14%;
     top: -9%;
 }
+
 .subImg12 {
     left: 6%;
     top: -14%;
 }
+
 .subImg13 {
     left: 24%;
     bottom: 31%;
 }
+
 .subImg14 {
     left: 20%;
-      bottom: 18%;
+    bottom: 18%;
 }
+
 .subImg15 {
     left: 13%;
-    bottom:8%;
+    bottom: 8%;
 }
+
 .subImg16 {
     left: 5%;
-      bottom: 4%;
+    bottom: 4%;
 }
 
 
@@ -1239,8 +1277,7 @@ hr {
     margin-top: 150px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    gap: 25px;
     /* border: 1px solid black; */
 }
 
@@ -1252,10 +1289,10 @@ hr {
 }
 
 .contactBtn {
-    padding: 10px 0px;
-    width: 476px;
-    font-size: 30px;
-    font-weight: 700;
+    padding: 5px 0px;
+    width: 390px;
+    font-size: 25px;
+    font-weight: 600;
     background-color: #053632;
     color: #FFFFFF;
     border-radius: 10px;
@@ -1265,26 +1302,29 @@ hr {
 
 .contactContent-p1 {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .contactContent-p2 {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .contactContent-p3 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contact-hrline {
-    margin-top: 20px;
-    width: 645px;
+    margin-top: 25px !important;
+    /* width: 125px; */
+    color: black;
+    text-align: right;
+    height: 2px !important;
 }
 
 .dot {
-    font-size: 50px;
+    font-size: 35px;
     /* font-weight: 400; */
     text-align: left;
     margin-left: 30px;
@@ -1359,16 +1399,40 @@ footer>p {
     font-weight: 600;
     font-size: 22px;
 }
-.copyright{
-    
+
+.copyright {
+
     height: 80px;
     font-size: 20px;
     font-weight: 400;
 }
+
 @media screen and (min-width:300px) and (max-width:600px) {
+    .homeBg {
+        height: unset;
+        width: 100%;
+    }
+
     .content {
         height: unset;
         flex-direction: column;
+    }
+
+    .prod-btn {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .productInfo>div {
+        width: unset;
+    }
+
+    .productClip {
+        /* width: unset; */
+    }
+
+    .prodImg1 {
+        width: 100%;
     }
 
     .service-content>div {
