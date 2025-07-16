@@ -410,7 +410,7 @@ body::-webkit-scrollbar {
     background-image: url(./images/Vector\ 1.png);
     background-size: cover;
     background-position: center;
-    clip-path: path("M 0, 190 L 0, 105 A 10,10 0,0,1 10, 95 L 70, 95 A 10,10 0,0,0 80, 85 L 80, 10 A 10,10 0,0,1 90, 0 L 516, 0 A 10, 10 0, 0, 1 526, 10 L 526, 130 A 10, 10 0, 0, 1 516, 140 L 430, 140 A 10, 10 0, 0, 0 420, 150 L 420, 190 A 10, 10 0, 0, 1 410, 200 L 10, 200 A 10, 10 0, 0, 1 0, 190 Z");
+    clip-path: path("M 0, 190 L 0, 105 A 10,10 0,0,1 10, 95 L 68, 95 A 10,10 0,0,0 77, 85 L 80, 10 A 10,10 0,0,1 90, 0 L 516, 0 A 10, 10 0, 0, 1 526, 10 L 526, 130 A 10, 10 0, 0, 1 516, 140 L 430, 143 A 10, 10 0, 0, 0 422, 150 L 420, 190 A 10, 10 0, 0, 1 410, 200 L 10, 200 A 10, 10 0, 0, 1 0, 190 Z");
 }
 
 .aboutClipPath>p {
@@ -785,6 +785,7 @@ body::-webkit-scrollbar {
     color: white;
 }
 .custom-scroll-bar>div:hover .aboutClipPath{
+    background-image: none;
     background-color: #3c5a41;
     color: white;
 }
